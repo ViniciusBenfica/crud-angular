@@ -2,6 +2,14 @@ html{
     font-size: 62.5%;
 }
 
+@media(max-width: 1000px){
+
+    html{
+        font-size: 45% !important;
+    }
+
+}
+
 body{
     margin: 0;
     user-select: none;
