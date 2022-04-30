@@ -1,10 +1,10 @@
 <div class="first-page">
     <div class="image-title">
         <img src="/assets/dentist.png" />
-        <div [ngStyle]="{'font-size': '5rem', 'color': 'rgb(95, 95, 95)'}"><b>Find a dentist</b></div>
+        <div [ngStyle]="{'font-size': '4rem', 'color': 'rgb(95, 95, 95)'}"><b>Find a dentist</b></div>
         <div [ngStyle]="{'font-size': '2rem', 'color': 'rgb(60, 60, 60)'}">Thousands of professionals in one app.</div>
     </div>
-    <div class="bnt login"><a routerLink="/login"><b>Login</b></a></div>
+    <app-button text="Login" rota="/login" color="linear-gradient(to right, rgb(21, 191, 197), rgb(6, 230, 163))"></app-button>
     <p [ngStyle]="{'font-size': '2rem', 'color': 'rgb(60, 60, 60)', 'margin-bottom': '-20px'}">Don't have an account?</p>
-    <div class="bnt sign-up"><a routerLink="/sign-up"><b>Sign Up</b></a></div>
+    <app-button text="Sign Up" rota="/sign-up" color="rgb(134, 134, 134)"></app-button>
 </div>
