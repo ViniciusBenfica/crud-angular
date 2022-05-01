@@ -7,6 +7,7 @@ import { FirstPageComponent } from './components/first-page/first-page.component
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ButtonComponent } from './components/button/button-navigate.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { ButtonComponent } from './components/button/button-navigate.component';
     FirstPageComponent,
     LoginComponent,
     SignUpComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
