@@ -36,6 +36,14 @@ body{
 
 }
 
+input{
+    margin: 17px auto;
+    border: solid 0;
+    font-size: 16px;
+    width: 400px;
+    border-bottom: solid rgb(21, 191, 197) 2px;
+}
+
 @media(max-width: 1000px){
     html{
         font-size: 45% !important;

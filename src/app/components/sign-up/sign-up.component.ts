@@ -27,7 +27,13 @@ export class SignUpComponent implements OnInit {
       "email": this.email,
       "password": this.password,
     }
+    
     this.serviceservice.addUser(user).subscribe()
+
+    this.name = ""
+    this.email = ""
+    this.password = ""
+
   }
 
 }
