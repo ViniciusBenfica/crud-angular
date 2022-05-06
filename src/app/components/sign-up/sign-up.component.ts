@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ServiceService } from 'src/app/services/service.service';
 import { User } from 'src/interfaces/User';
 
@@ -14,7 +15,7 @@ export class SignUpComponent implements OnInit {
   email: string = ""
   password: string = ""
 
-  constructor(private serviceservice: ServiceService) {
+  constructor(private serviceservice: ServiceService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -33,6 +34,8 @@ export class SignUpComponent implements OnInit {
     this.name = ""
     this.email = ""
     this.password = ""
+
+    this.router.navigate(["/"])
 
   }
 

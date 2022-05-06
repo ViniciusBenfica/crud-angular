@@ -15,7 +15,7 @@ export class ServiceService {
     return this.http.post<User>(this.APIURL+"/crud", user)
    }
 
-   login(user: User): Observable<User>{
-     return this.http.get<User>(this.APIURL+"/crud/"+ user.id)
+   login(user: object): Observable<boolean>{
+     return this.http.post<boolean>(this.APIURL+"/crud/login", user)
    }
 }
